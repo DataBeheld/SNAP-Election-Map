@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+body {
+    background-color: #F5F5F0;
+    font-family: 'EB Garabond';
+    color: #4C5B5C;
+}
+
+h1 {
+    font-family: 'Cinzel';
+    font-weight: 700;
+    color: #4C5B5C;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Cinzel';
+    color: #4C5B5C;
+    text-align: center;
+}
+
+.graph-container {
+  border: 0.3rem solid #EBEBE8;
+  padding: 0.5rem;
+  border-radius: 0rem;
+}
+
+.textpoint text {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
+}
