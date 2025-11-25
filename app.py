@@ -58,6 +58,7 @@ external_stylesheets = [
 #begin app coding
 #instantiate app and set layout
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 #set the browser tab text
 app.title = 'Cong. District SNAP Explorer'
@@ -360,3 +361,4 @@ def display_choropleth(selection):
 
 
 app.run(debug=False)
+
