@@ -7,6 +7,7 @@ import json
 import dash
 from dash import Dash, dcc, html, Input, Output
 import dash_bootstrap_components as dbc
+import os
 
 #read in processed data
 gdf = gpd.read_file('data/processed.geojson')
@@ -360,5 +361,7 @@ def display_choropleth(selection):
     return cdmap, pie, hist
 
 
-app.run(debug=False)
+port = int(os.environ.get("PORT", 8050))
+app.run(host="0.0.0.0", port=port, debug=False)
+
 
