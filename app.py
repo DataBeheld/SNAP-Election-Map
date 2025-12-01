@@ -60,6 +60,7 @@ external_stylesheets = [
 #begin app coding
 #instantiate app and set layout
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 #set the browser tab text
 app.title = 'Cong. District SNAP Explorer'
@@ -412,3 +413,4 @@ def display_choropleth(breakpoints, selection):
 #set port for Render
 port = int(os.environ.get('PORT', 8050)) 
 app.run_server(host="0.0.0.0", port=port, debug=False)
+
