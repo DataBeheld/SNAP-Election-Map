@@ -1,0 +1,8 @@
+dash==3.2.0
+dash_bootstrap_components==2.0.4
+dash_breakpoints
+geopandas==1.1.1
+guinicorn
+numpy==2.3.4
+pandas==2.3.3
+plotly==6.4.0
