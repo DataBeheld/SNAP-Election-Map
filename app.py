@@ -8,6 +8,7 @@ import dash
 from dash import Dash, dcc, html, Input, Output
 import dash_bootstrap_components as dbc
 from dash_breakpoints import WindowBreakpoints
+import os
 
 #read in processed data
 gdf = gpd.read_file('data/processed.geojson')
@@ -408,5 +409,6 @@ def display_choropleth(breakpoints, selection):
 
     return cdmap, pie, hist
 
-
-app.run(jupyter_mode='tab')
+#set port for Render
+port = int(os.environ.get('PORT', 8050)) 
+app.run_server(host="0.0.0.0", port=port, debug=False)
